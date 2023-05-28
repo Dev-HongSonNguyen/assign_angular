@@ -1,0 +1,11 @@
+<form action="" (ngSubmit)="Edit()" [formGroup]="productForm">
+    <label for="">Name</label>
+    <input type="text" formControlName="name">
+    <label for="">Image</label>
+    <input type="text" formControlName="image">
+    <label for="">Price</label>
+    <input type="number" formControlName="price">
+    <label for="">Description</label>
+    <input type="text" formControlName="description">
+    <button [disabled]="!productForm.valid">Submit</button>
+</form>
